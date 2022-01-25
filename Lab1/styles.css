@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1D1F20;
+}
+
+#form, #business_card{
+    width: justify;
+    height: justify;
+    position: absolute;
+    padding: 1.5rem;    
+    border-radius: 3%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+#form {
+    font-family: Arial, Helvetica, sans-serif;
+    top: 30%;
+    left: 50%;
+    background-color: #2D2D31;
+    color: #82D7C2;
+}
+
+#form div {
+    padding-bottom: 0.5rem;
+}
+
+#form h1 {
+text-align: center;
+padding-bottom: 1rem;
+}
+
+#form select, #form input {
+    width: 15rem;
+    margin-left: 2rem;
+    border: none;
+    border-bottom: 1px solid #82D7C2;
+    background-color: #2D2d31;
+    color: #82D7C2;
+}
+
+
+#form select:focus, #form input:focus {
+    outline: none;
+}
+
+
+.boxes{
+    float: right;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons button {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem 0;
+
+    background-color: #1D1F20;
+    color: #82D7C2;
+
+    font-style: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: .25rem;
+}
+
+
+
+#buttons button:active {
+    background-color:  #82D7C2;
+    color: #1D1F20;
+}
+
+#business_card {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#business_card_title {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="SV">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Buisness Card</title>
+</head>
+
+<body>
+    <section id="form">
+        <h1>Beställ ditt visitkort</h1>
+        <div id="form_company">
+            <label>Företag</label>
+            <input type="text" id="form_company_input" class="boxes">
+        </div>
+        <div id="form_first_name">
+            <label>Förnamn</label>
+            <input type="text" id="form_first_name_input" class="boxes">
+        </div>
+        <div id="form_last_name">
+            <label>Efternamn</label>
+            <input type="text" id="form_last_name_input" class="boxes">
+        </div>
+
+        <div id="form_title">
+            <label>Titel</label>
+            <input type="text" id="form_title_input" class="boxes">
+        </div>
+        <div id="form_phone">
+            <label>Mobilnummer</label>
+            <input type="text" id="form_phone_input" class="boxes">
+        </div>
+        <div id="form_email">
+            <label>Email</label>
+            <input type="text" id="form_email_input" class="boxes">
+        </div>
+        <div id="form_background_color">
+            <!-- This div represents the background option and all it's cases-->
+            <label>Bakgrundsfärg</label>
+            <select id="form_background_color_select" class="boxes">
+                <option value="Lightblue">Ljusblå</option>
+                <option value="Lightyellow">Ljusgul</option>
+                <option value="White">Vit</option>
+                <option value="Turquoise">Turkos</option>
+            </select>
+        </div>
+        <div id="form_text_color">
+            <!-- This div represents the text color option and all it's cases-->
+            <label>Textfärg</label>
+            <select id="form_text_color_select" class="boxes">
+                <option value="Black">Svart</option>
+                <option value="Blue">Blå</option>
+                <option value="Red">Röd</option>
+                <option value="Darkgreen">Mörkgrön</option>
+            </select>
+        </div>
+        <div id="form_font">
+            <!-- This div represents the font option and all it's cases-->
+            <label>Typsnitt</label>
+            <select id="form_font_select" class="boxes">
+                <option value="Verdana">Verdana</option>
+                <option value="Ariel">Arial</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Impact">Impact</option>
+            </select>
+        </div>
+        <div id="buttons">
+            <!-- This div represents the buttons-->
+            <button id="reset_button">Reset</button>
+            <button id="print_button">Print</button>
+        </div>
+    </section>
+
+    <section id="business_card">
+        <h1 id="business_card_company"></h1>
+        <h3 id="business_card_name"></h3>
+        <h5 id="business_card_title"></h5>
+        <h4 id="business_card_phone"></h4>
+        <h4 id="business_card_email"></h4>
+    </section>
+</body>
+
+</html>
