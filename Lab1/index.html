@@ -12,33 +12,45 @@
 <body>
     <section id="form">
         <h1>Beställ ditt visitkort</h1>
+
+        <!-- Ändrar företagsnamnet på visitkortet -->
         <div id="form_company">
             <label>Företag</label>
             <input type="text" id="form_company_input" class="boxes">
         </div>
+
+        <!-- Ändrar förnamnet på visitkortet -->
         <div id="form_first_name">
             <label>Förnamn</label>
             <input type="text" id="form_first_name_input" class="boxes">
         </div>
+
+        <!-- Ändrar efternamnet på visitkortet -->
         <div id="form_last_name">
             <label>Efternamn</label>
             <input type="text" id="form_last_name_input" class="boxes">
         </div>
 
+        <!-- Ändrar titeln på visitkortet -->
         <div id="form_title">
             <label>Titel</label>
             <input type="text" id="form_title_input" class="boxes">
         </div>
+
+        <!-- Ändrar telefonnummret på visitkortet -->
         <div id="form_phone">
             <label>Mobilnummer</label>
             <input type="text" id="form_phone_input" class="boxes">
         </div>
+
+        <!-- Ändrar eposten på visitkortet -->
         <div id="form_email">
             <label>Email</label>
             <input type="text" id="form_email_input" class="boxes">
         </div>
+
+        <!-- Ändrar bakgrundsfärgen på visitkortet -->
         <div id="form_background_color">
-            <!-- This div represents the background option and all it's cases-->
             <label>Bakgrundsfärg</label>
             <select id="form_background_color_select" class="boxes">
                 <option value="Lightblue">Ljusblå</option>
@@ -47,8 +59,9 @@
                 <option value="Turquoise">Turkos</option>
             </select>
         </div>
+
+        <!-- Ändrar text-färgen på visitkortet-->
         <div id="form_text_color">
-            <!-- This div represents the text color option and all it's cases-->
             <label>Textfärg</label>
             <select id="form_text_color_select" class="boxes">
                 <option value="Black">Svart</option>
@@ -57,8 +70,9 @@
                 <option value="Darkgreen">Mörkgrön</option>
             </select>
         </div>
+
+        <!-- Ändrar typsnittet på visitkortet -->
         <div id="form_font">
-            <!-- This div represents the font option and all it's cases-->
             <label>Typsnitt</label>
             <select id="form_font_select" class="boxes">
                 <option value="Verdana">Verdana</option>
@@ -67,13 +81,16 @@
                 <option value="Impact">Impact</option>
             </select>
         </div>
+
         <div id="buttons">
             <!-- This div represents the buttons-->
-            <button id="reset_button">Reset</button>
-            <button id="print_button">Print</button>
+            <button id="reset_button">Nollställ</button>
+            <button id="print_button">Skriv Ut</button>
         </div>
+
     </section>
 
+    <!--- Detta är representationen för visitkortet som kommer "Skrivas ut". HTMLen ändras med JS -->
     <section id="business_card">
         <h1 id="business_card_company"></h1>
         <h3 id="business_card_name"></h3>
