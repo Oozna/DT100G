@@ -22,9 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	})
 
 	document.getElementById("mainnavlist").addEventListener("click", function (e) {
+		playMusic(e.target.id, music);
 		let url = baseURL + "channels/" + e.target.id + "?format=json";
-		music.src = baseMusicURL + e.target.id + "-hi.mp3";
-		music.play();
 		fetch(url)
 			.then(response => response.json())
 			.then(data => {
@@ -109,4 +108,9 @@ function loadScheule(URL) {
 		.catch(error => {
 			console.log("An error occured during the loadScheule(URL) function " + error);
 		})
+}
+
+function playMusic(id, audio) {
+	audio.src = baseMusicURL + id + "-hi.mp3";
+	audio.play();
 }
