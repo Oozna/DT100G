@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("business_card").style.backgroundColor = document.getElementById("form_background_color_select").value;
         document.getElementById("business_card").style.color = document.getElementById("form_text_color_select").value;
         document.getElementById("business_card").style.fontFamily = document.getElementById("form_font_select").value;
-
+        document.getElementById("form").style.display = "none"; //Gömmer formuläret
 
         // Tidigare kod som återställde inputfälten men kände att reset-knappen var nog
         /*
